@@ -1,1 +1,1 @@
-include ':app'
+include ':koin_mvvm_livedata', ':koin_clean_architecture'

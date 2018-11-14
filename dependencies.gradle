@@ -13,6 +13,9 @@ ext {
             koin_android                        :   "org.koin:koin-android:$koin_android_version",
             koin_android_view_model              :   "org.koin:koin-android-viewmodel:$koin_android_version",
             architecture_components_lifecycle   :   "android.arch.lifecycle:extensions:$lifecycle_version"
+
+            //Rx
+
     ]
 
     testDependencies = [
