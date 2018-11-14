@@ -3,6 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+HashMap<String, String> baseDependencies = rootProject.ext.dependencies
+HashMap<String, String> testDependencies = rootProject.ext.testDependencies
 
 android {
     compileSdkVersion 28
@@ -23,16 +25,17 @@ android {
 }
 
 dependencies {
-    def lifecycle_version = "1.1.1"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation baseDependencies.app_compat_v7
+    implementation baseDependencies.constraint_layout
+    implementation baseDependencies.architecture_components_lifecycle
 
-    implementation 'org.koin:koin-android:1.0.2'
-    implementation 'org.koin:koin-android-viewmodel:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    implementation baseDependencies.koin_android
+    implementation baseDependencies.koin_android_view_model
+
+    testImplementation testDependencies.junit
+    androidTestImplementation testDependencies.android_test_runner
+    androidTestImplementation testDependencies.espresso_core
+
 }
