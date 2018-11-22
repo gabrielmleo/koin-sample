@@ -1,8 +1,8 @@
 package com.example.koin_clean_architecture.domain.repository
 
-import com.example.gleonardo.newssportspaginglibrary.data.model.Response
+import com.example.gleonardo.newssportspaginglibrary.data.model.DomainResponse
 import io.reactivex.Single
 
 interface Repository {
-    fun getNews(): Single<Response>
+    fun getNews(): Single<DomainResponse>
 }
