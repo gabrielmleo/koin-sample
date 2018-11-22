@@ -40,4 +40,17 @@ dependencies {
     androidTestImplementation testDependencies.android_test_runner
     androidTestImplementation testDependencies.espresso_core
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //Networking
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
+    //Rx
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    //Architecture Components
+    implementation "android.arch.lifecycle:extensions:1.1.1"
 }
