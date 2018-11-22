@@ -1,7 +1,8 @@
-package com.example.koin_clean_architecture
+package com.example.koin_clean_architecture.presentation.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.koin_clean_architecture.R
 
 class MainActivity : AppCompatActivity() {
 

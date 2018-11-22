@@ -3,7 +3,7 @@
     package="com.example.koin_clean_architecture">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".presentation.view.MainActivity"></activity>
     </application>
 
 </manifest>
