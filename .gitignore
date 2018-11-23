@@ -181,8 +181,6 @@ fabric.properties
 
 ### AndroidStudio Patch ###
 
-!/gradle/wrapper/gradle-wrapper.jar
-
 ### Java ###
 # Compiled class file
 
@@ -194,7 +192,6 @@ fabric.properties
 # Mobile Tools for Java (J2ME)
 
 # Package Files #
-*.jar
 *.nar
 *.zip
 *.tar.gz

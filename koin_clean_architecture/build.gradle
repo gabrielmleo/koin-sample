@@ -32,6 +32,10 @@ dependencies {
     implementation baseDependencies.app_compat_v7
     implementation baseDependencies.constraint_layout
     implementation baseDependencies.architecture_components_lifecycle
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 
     implementation baseDependencies.koin_android
     implementation baseDependencies.koin_android_view_model
