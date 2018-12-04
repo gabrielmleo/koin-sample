@@ -1,16 +1,14 @@
 package com.example.gleonardo.newssportspaginglibrary.data.model
 
-import com.example.koin_clean_architecture.data.model.DomainSource
 import com.example.koin_clean_architecture.data.model.Source
-import com.google.gson.annotations.SerializedName
 
-data class News (
-        @SerializedName("source") val source: Source? = null,
-        @SerializedName("author") val author: String? =null,
-        @SerializedName("title") val title: String? = null,
-        @SerializedName("description") val description: String? = null,
-        @SerializedName("url") val url: String? = null,
-        @SerializedName("urlToImage") val image: String? = null,
-        @SerializedName("publishedAt") val publishedAt: String? = null,
-        @SerializedName("content") val content: String? = null
+data class News(
+        val source: Source? = null,
+        val author: String? = null,
+        val title: String? = null,
+        val description: String? = null,
+        val url: String? = null,
+        val image: String? = null,
+        val publishedAt: String? = null,
+        val content: String? = null
 )
